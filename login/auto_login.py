@@ -6,7 +6,7 @@ driver.get('http://internet.tenda.cn/ac_portal/default/pc.html?tabs=pwd') # 打�
 time.sleep(2)
 username = "pansonglin" # 请替换成你的用户名
 password = "tenda0043408..." # 请替换成你的密码
-driver.find_element(By.ID,'password_name').send_keys(username) # 自动敲入用户名
+driver.find_element(By.ID,'password_name').send_keys(username) 
 driver.find_element(By.ID,'password_pwd').send_keys(password) 
 a=driver.find_element(By.NAME,'btlogin')
 a.click()
